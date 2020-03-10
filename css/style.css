@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    background: #19242e;
+}
+
+h1,
+h2,
+h3 {
+    color: #E41376;
+}
+
+h2 {
+    font-size: 55px;
+}
+
+h3 {
+    font-size: 38px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    line-height: 35px;
+    color: #daeff2;
+}
+
+section {
+    padding: 10px 0;
+    height: auto;
+    overflow: hidden;
+    border-bottom: 1px solid #daeff2;
+}
+
+#profile {
+    justify-content: center;
+    align-items: center;
+}
+
+#profile h2 {
+    padding-top: 60px;
+    padding-left: 800px;
+    padding-bottom: 50px;
+}
+
+#profile h3 {
+    padding-bottom: 20px;
+}
+
+#profile p {
+    padding-bottom: 30px;
+}
+
+#profile img {
+    float: left;
+    height: 600px;
+    width: auto;
+    padding-left: 160px;
+    padding-right: 80px;
+}
+
+#utau {
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin-top: 40px;
+    padding-left: 100px;
+}
+
+#utau h2,
+#utau h3,
+#utau p {
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+#utau h2 {
+    padding-top: 60px;
+    padding-left: 250px;
+    padding-bottom: 30px;
+}
+
+#utau-left {
+    padding: 0 auto;
+    float: left;
+}
+
+#utau img {
+    height: 600px;
+}
+
+#mv {
+    width: auto;
+    height: auto;
+}
+
+.mvs {
+    text-align: center;
+    height: 650px;
+}
+
+.mvs h2 {
+    margin: 30px 14px;
+}
+
+#mv-button {
+    padding: 70px 0;
+}
+
+.mvs a {
+    font-size: 16px;
+    padding: 20px 40px;
+    background: #e41376;
+    color: #daeff2;
+    border: 1px solid #e41376;
+    text-decoration: none;
+    text-align: center;
+}
+
+#photo {
+    padding: 10px 0;
+    height: auto;
+    padding-bottom: 30px;
+/*    overflow: hidden;*/
+}
+
+#photo h2 {
+    padding: 50px 0;
+    text-align: center;
+}
+
+footer {
+    height: auto;
+    overflow: hidden;   
+}
+
+.footer{
+    height: 70px;
+    background-image: url(../images/footer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-size: 35px;
+    color: #e41376;
+}
