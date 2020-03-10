@@ -124,9 +124,10 @@ section {
 
 #photo {
     padding: 10px 0;
+    margin-left: 20px;
     height: auto;
     padding-bottom: 30px;
-/*    overflow: hidden;*/
+    overflow: hidden;
 }
 
 #photo h2 {
@@ -140,9 +141,9 @@ footer {
 }
 
 .footer{
-    padding: 50px;
+    padding: 40px;
     background-image: url(../images/footer.jpg);
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
     text-align: center;
     font-size: 35px;
