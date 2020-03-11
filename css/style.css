@@ -8,7 +8,6 @@ body {
     background: #19242e;
 }
 
-h1,
 h2,
 h3 {
     color: #E41376;
@@ -27,6 +26,61 @@ p {
     margin-bottom: 40px;
     line-height: 35px;
     color: #daeff2;
+}
+
+#hesder {
+    height: 700px;
+}
+
+#bg-video {
+    position: relative;
+}
+
+.header-title {
+    font-family: serif;
+    font-size: 400%;
+    color: #daeff2;
+    position: absolute;
+    left: 30%;
+    top: 250px;
+    text-align: center;
+    z-index: 1;
+    transition: 0.5;
+}
+
+.hesder-title h1:hover{
+    color: #0cc;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+ul {
+    overflow: hidden;
+    margin: 0 50px;
+}
+
+ul li {
+    list-style: none;
+    float: left;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    padding: 30px 15px 0;
+    color: #daeff2;
+    transition: 0.5s;
+    font-size: 20pt;
+    font-weight: 300;
+}
+
+nav a:hover {
+    color: #0cc;
 }
 
 section {
@@ -136,15 +190,22 @@ section {
 }
 
 footer {
-    height: auto;
-    overflow: hidden;   
+    overflow: hidden;
 }
 
-.footer{
-    padding: 40px;
+.footer {
+    height: auto;
     background-image: url(../images/footer.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
+    text-align: center;
+}
+
+.footer img {
+    margin-top: 40px;
+}
+
+.footer p {
     text-align: center;
     font-size: 35px;
     color: #e41376;
