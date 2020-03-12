@@ -3,13 +3,35 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: 'MyFont';
+    src: url("../fonts/Monad.otf");
+}
+
 body {
-    width: 100%;
-    background: #19242e;
+    height: 100%;
+    background: linear-gradient(45deg, #25123f, #19424e, #25123f, #e41376);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 h2,
 h3 {
+    font-family: 'MyFont';
     color: #E41376;
 }
 
@@ -23,7 +45,6 @@ h3 {
 
 p {
     font-size: 18px;
-    margin-bottom: 40px;
     line-height: 35px;
     color: #daeff2;
 }
@@ -37,9 +58,12 @@ p {
 }
 
 .header-title {
-    font-family: serif;
+    font-family: 'MyFont';
     font-size: 400%;
-    color: #daeff2;
+    color: #0cc;
+    background: -webkit-linear-gradient(90deg, #e41376, #0cc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     position: absolute;
     left: 30%;
     top: 250px;
@@ -48,7 +72,7 @@ p {
     transition: 0.5;
 }
 
-.hesder-title h1:hover{
+.hesder-title a:hover {
     color: #0cc;
 }
 
@@ -73,6 +97,7 @@ nav a {
     display: block;
     text-decoration: none;
     padding: 30px 15px 0;
+    font-family: 'MyFont';
     color: #daeff2;
     transition: 0.5s;
     font-size: 20pt;
@@ -84,10 +109,8 @@ nav a:hover {
 }
 
 section {
-    padding: 10px 0;
     height: auto;
     overflow: hidden;
-    border-bottom: 1px solid #daeff2;
 }
 
 #profile {
@@ -106,6 +129,7 @@ section {
 }
 
 #profile p {
+    font-family: 'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
     padding-bottom: 30px;
 }
 
@@ -127,10 +151,14 @@ section {
 }
 
 #utau h2,
-#utau h3,
+#utau h3{
+    font-family: 'MyFont';
+}
+
 #utau p {
     margin: 0;
     padding-bottom: 30px;
+    font-family:'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
 }
 
 #utau h2 {
@@ -174,14 +202,19 @@ section {
     border: 1px solid #e41376;
     text-decoration: none;
     text-align: center;
+    transition: 0.3s;
+}
+
+.mvs a:hover{
+    background: #25123f;
+    color: #0cc;
 }
 
 #photo {
     padding: 10px 0;
     margin-left: 20px;
     height: auto;
-    padding-bottom: 30px;
-    overflow: hidden;
+    padding-bottom: 10px;
 }
 
 #photo h2 {
@@ -194,7 +227,7 @@ footer {
 }
 
 .footer {
-    height: auto;
+    height: 130px;
     background-image: url(../images/footer.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -202,11 +235,24 @@ footer {
 }
 
 .footer img {
-    margin-top: 40px;
+    margin-top: 25px;
+    padding: 0 30px;
 }
 
 .footer p {
     text-align: center;
-    font-size: 35px;
+    font-family: 'MyFont';
+    font-size: 30px;
     color: #e41376;
+}
+
+.fadein {
+    opacity: 0;
+    transform: translate(0, 100px);
+    transition: all 1s;
+}
+
+.fadein.active {
+    opacity: 1;
+    transform: translate(0, 0);
 }
