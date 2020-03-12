@@ -59,7 +59,7 @@ p {
 
 .header-title {
     font-family: 'MyFont';
-    font-size: 400%;
+    font-size: 65px;
     color: #0cc;
     background: -webkit-linear-gradient(90deg, #e41376, #0cc);
     -webkit-background-clip: text;
