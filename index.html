@@ -10,26 +10,28 @@
 </head>
 
 <body>
+   
     <section id="header">
-        <video id="bg-video" src="move/babylon.mov" width="100%" poster="move/poster.png" autoplay loop></video>
+        <video id="bg-video" src="move/babylon.mp4" width="100%" height="auto" autoplay loop></video>
         <div class="header-title">
-            <h1>PORTFOLIO</h1>
+            <a><h1>PORTFOLIO<br>&#9661;</h1></a>
         </div>
         <nav>
             <ul>
-                <li><a href="#">PROFILE</a></li>
-                <li><a href="#">UTAU</a></li>
-                <li><a href="#">MV</a></li>
-                <li><a href="#">PHOTO</a></li>
+                <li><a href="#profile">PROFILE</a></li>
+                <li><a href="#utau">UTAU</a></li>
+                <li><a href="#mv">MV</a></li>
+                <li><a href="#photo">PHOTO</a></li>
             </ul>
         </nav>
     </section>
 
-    <section id="profile">
+    <section id="profile" class="fadein">
         <div class="left-box">
             <img src="images/shigure.JPG" alt="">
         </div>
         <div class="right-box">
+           <span id="effect_01">
             <h2>PROFILE</h2>
             <h3>坂本 柊哉</h3>
             <p>
@@ -38,11 +40,12 @@
                 音楽制作・DJ・MIX・イラスト・写真と幅広く活動している。<br>
                 様々なイラストレーターとコラボしMVなども制作している。
             </p>
+            </span>
         </div>
     </section>
 
 
-    <section id="utau">
+    <section id="utau" class="fadein">
         <div class="left-box" id="utau-left">
             <h2>UTAU</h2>
             <p>
@@ -64,18 +67,18 @@
     </section>
 
 
-    <seciton id="mv">
+    <seciton id="mv" class="fadein">
         <div class="mvs">
             <h2>MV</h2>
-            <iframe width="720" height="405" src="https://www.youtube.com/embed/FDsxoflHowQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="720" height="405" src="https://www.youtube.com/embed/FDsxoflHowQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="fadein"></iframe>
             <div id="mv-button">
-                <a href="#">その他の動画</a>
+                <a href="https://www.nicovideo.jp/user/35144917/video" class="fadein">その他の動画</a>
             </div>
         </div>
     </seciton>
 
 
-    <section id="photo">
+    <section id="photo" class="fadein">
         <h2>PHOTO</h2>
         <div class="slider">
             <div><img src="images/photo01.jpg" width="400" height="300" alt=""></div>
@@ -94,10 +97,10 @@
 
     <footer>
         <div class="footer">
-            <img src="images/twitter.png" width="30" alt="">
-            <img src="images/instagram.png" width="30" alt="">
-            <img src="images/youtube.png" width="30" alt="">
-            <img src="images/niconico.png" width="30" alt="">
+            <a href="https://twitter.com/shiguren490"><img src="images/twitter.png" width="40" alt=""></a>
+            <a href="https://www.instagram.com/shiguren490"><img src="images/instagram.png" width="40" alt=""></a>
+            <a href="https://www.youtube.com/channel/UCWM6CoZQIkvcNggFAdumREQ?view_as=subscriber"><img src="images/youtube.png" width="40" alt=""></a>
+            <a href="https://www.nicovideo.jp/user/35144917"><img src="images/niconico.png" width="40" alt=""></a>
             <p>
                 <small>&copy; shigure 2020</small>
             </p>
@@ -107,6 +110,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/slick.set.js"></script>
+    <script src="js/fadein.js"></script>
 
 </body>
 
