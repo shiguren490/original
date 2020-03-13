@@ -266,14 +266,15 @@ footer {
     section {
         float: none;
     }
-    
-    .video{
-        text-align: center;
+
+    .video {
+        display: flex;
+        justify-content: center;
     }
 
     #bg-video {
         width: auto;
-        height: 70vh;
+        height: 80vh;
     }
 
     .header-title {
@@ -320,6 +321,7 @@ footer {
     #profile p,
     #utau p {
         text-align: center;
+        letter-spacing: 0.1em;
         font-size: 8px;
         line-height: 20px;
     }
@@ -338,17 +340,16 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 30px;
         flex-wrap: wrap;
         font-size: 13px;
     }
 
     #utau img {
-        width: 50%;
+        max-width: 50%;
+        text-align: center;
         height: auto;
         object-fit: contain;
-        text-align: center;
-        padding: 0px
+        padding: 0px;
     }
 
     #mv {
@@ -375,7 +376,7 @@ footer {
     }
 
     iframe {
-        width: 90%;
+        width: 70%;
         height: 30%;
     }
 
@@ -395,15 +396,20 @@ footer {
     }
 
     .footer {
-        height: 100%;
+        background-size: cover;
+        background-position: center;
+        height: auto;
         width: auto;
     }
 
     .footer img {
         width: 20px;
+        padding: 0 20px;
+        ;
     }
 
     .footer p {
         font-size: 15px;
     }
+
 }
