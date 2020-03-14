@@ -116,12 +116,12 @@ section {
 #profile {
     justify-content: center;
     align-items: center;
+    display: flex;
 }
 
 #profile h2 {
-    padding-top: 60px;
-    padding-left: 800px;
-    padding-bottom: 50px;
+    text-align: center;
+    padding-bottom: 70px;
 }
 
 #profile h3 {
@@ -137,7 +137,7 @@ section {
     float: left;
     height: 600px;
     width: auto;
-    padding-left: 160px;
+    padding-left: 80px;
     padding-right: 80px;
 }
 
@@ -274,7 +274,7 @@ footer {
 
     #bg-video {
         width: auto;
-        height: 80vh;
+        height: 90vh;
     }
 
     .header-title {
@@ -289,7 +289,7 @@ footer {
 
     h2 {
         text-align: center;
-        font-size: 200%;
+        font-size: 230%;
     }
 
     h3 {
@@ -299,6 +299,7 @@ footer {
 
     #profile {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         margin-bottom: 30px;
@@ -307,16 +308,29 @@ footer {
     }
 
     #profile img {
+        order: 2;
         width: 50%;
         margin: 0 auto;
         height: auto;
         object-fit: contain;
         padding: 0px;
     }
+    
+    .profile-box{
+        order: 1;
+    }
 
     #profile h2 {
         padding: 0px;
+        padding: 10% 0 5% 0 ;
+        
     }
+    
+    #profile h3 {
+        padding: 0;
+    }
+    
+    
 
     #profile p,
     #utau p {
